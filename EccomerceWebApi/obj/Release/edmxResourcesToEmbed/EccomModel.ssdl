@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MaliMaliDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer_Reg_Table">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_First_Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Customer_Second_Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Customer_Phone_Number" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Customer_Nearest_Primary" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fcm_Token_Table">
+    <Key>
+      <PropertyRef Name="Fcm_Token_ID" />
+    </Key>
+    <Property Name="Fcm_Token_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fcm_Token" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products_Table">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Product_Image" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Product_Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Product_Desc" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Product_Price" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MaliMaliDbModelStoreContainer">
+    <EntitySet Name="Customer_Reg_Table" EntityType="Self.Customer_Reg_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fcm_Token_Table" EntityType="Self.Fcm_Token_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products_Table" EntityType="Self.Products_Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

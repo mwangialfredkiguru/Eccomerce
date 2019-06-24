@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MaliMaliDbModelStoreContainer" CdmEntityContainer="MaliMaliDbEntities">
+    <EntitySetMapping Name="Customer_Reg_Table">
+      <EntityTypeMapping TypeName="MaliMaliDbModel.Customer_Reg_Table">
+        <MappingFragment StoreEntitySet="Customer_Reg_Table">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Customer_First_Name" ColumnName="Customer_First_Name" />
+          <ScalarProperty Name="Customer_Second_Name" ColumnName="Customer_Second_Name" />
+          <ScalarProperty Name="Customer_Phone_Number" ColumnName="Customer_Phone_Number" />
+          <ScalarProperty Name="Customer_Nearest_Primary" ColumnName="Customer_Nearest_Primary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fcm_Token_Table">
+      <EntityTypeMapping TypeName="MaliMaliDbModel.Fcm_Token_Table">
+        <MappingFragment StoreEntitySet="Fcm_Token_Table">
+          <ScalarProperty Name="Fcm_Token_ID" ColumnName="Fcm_Token_ID" />
+          <ScalarProperty Name="Fcm_Token" ColumnName="Fcm_Token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products_Table">
+      <EntityTypeMapping TypeName="MaliMaliDbModel.Products_Table">
+        <MappingFragment StoreEntitySet="Products_Table">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Product_Image" ColumnName="Product_Image" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_Desc" ColumnName="Product_Desc" />
+          <ScalarProperty Name="Product_Price" ColumnName="Product_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
