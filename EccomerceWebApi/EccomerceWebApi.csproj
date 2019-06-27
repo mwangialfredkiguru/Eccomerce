@@ -176,33 +176,13 @@
     <Compile Include="Controllers\MalimaliController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="Customer_Reg_Table.cs">
-      <DependentUpon>EccomModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EccomModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EccomModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EccomModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EccomModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EccomModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EccomModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Fcm_Token_Table.cs">
-      <DependentUpon>EccomModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="DAL\MaliMaliDbEntities.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Products_Table.cs">
-      <DependentUpon>EccomModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Customer_Reg_Table.cs" />
+    <Compile Include="Models\Fcm_Token_Table.cs" />
+    <Compile Include="Models\Products_Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,16 +191,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="EccomModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EccomModel.edmx</DependentUpon>
-      <LastGenOutput>EccomModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="EccomModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EccomModel.edmx</DependentUpon>
-      <LastGenOutput>EccomModel.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -245,13 +215,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="EccomModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EccomModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="EccomModel.edmx.diagram">
-      <DependentUpon>EccomModel.edmx</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -276,7 +239,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

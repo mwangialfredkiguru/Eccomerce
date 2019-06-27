@@ -1,4 +1,6 @@
-﻿using RestSharp;
+﻿using EccomerceWebApi.DAL;
+using EccomerceWebApi.Models;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
